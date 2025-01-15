@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Ingredients, Your Recipes</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container5 {
+    max-width: 1000px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4.0rem;
+    margin-bottom: 0.5em;
+}
+
+.highlight-orange {
+    color: orange;
+}
+
+.highlight-blue {
+    color: #3498db;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+    color: #ccc;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    width: 350px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e69500;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #3498db;
+}
+
+    </style>
+
+    <script>
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                createRecipe();
+            }
+        }
+        
+        function createRecipe() {
+            const input = document.getElementById("ingredientsInput").value;
+            if (input.trim() === "") {
+                alert("Please enter some ingredients!");
+                return;
+            }
+            // You can replace this alert with actual logic to fetch or display recipes
+            alert(`Generating recipe for: ${input}`);
+        }
+
+
+
+    </script>
+
+
+</head>
+<body>
+    <div class="container5">
+        <h1>Your <span class="highlight-orange">Ingredients</span>, Your <span class="highlight-blue">Recipes</span></h1>
+        <p>Write your ingredients comma separated or with whitespace and get recipes. Recipe will be generated based on your ingredients and language you wrote the ingredients.</p>
+        <div class="search-box">
+            <input
+                type="text"
+                id="ingredientsInput"
+                placeholder="Write your ingredients here"
+                onkeypress="handleKeyPress(event)"
+            />
+            <button onclick="createRecipe()">Create recipe</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
