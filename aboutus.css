@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* color: var(--primary-text-color); */
+    }
+:root{
+    --primary-text-color:#ec6110;
+    /* --primary-text-color:#105dec; */
+    --secondary-text-color:#f0670b;
+    --accent-color:#003cff;
+    /* --accent-color:#eb9b06; */
+    --accent-color-dark:#ec3e09;
+    --padding-inline-section:20px ;
+    }
+h3{
+    font-size: 1.39rem;
+}    
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+    text-decoration: none;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.box{
+    background-color: rgba(127, 255, 212, 0);
+    height: 100%;
+    width: 100%;
+    padding: 80px 0;
+}
+
+
+
+.team-members {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Team Container */
+.team-container12 {
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* Team Cards Grid */
+.team-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 cards per row */
+    gap: 30px; /* Space between the cards */
+    margin: 0 auto;
+}
+
+/* Individual Card Styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px; /* Add padding inside the card */
+    height: 280px; /* Fixed height for uniformity */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #007bff; /* Add a border for better appearance */
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.card p {
+    margin: 0 0 15px;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .team-cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-cards {
+        grid-template-columns: 1fr; /* 1 card per row on very small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.box-content{
+    /* background-color: rgb(214, 124, 108); */
+    /* background-color: rgb(255, 247, 242); */
+    background-color: rgb(85, 102, 117);
+    height: 500px;
+    max-width: 1100px;
+    color: orange;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    border: 5px black;
+}
+.box-content2{
+    background-color:rgb(235,236,240);
+    height: 500px;
+    max-width: 1100px;
+    color: orange;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    border: 5px black;
+}
+.box-content3{
+    background-color:rgb(240, 241, 247);
+    height: 500px;
+    max-width: 1100px;
+    color: orange;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    border: 5px black;
+
+}
+.box-content3 box2{
+    flex-direction: column;
+}
+.box-content4{
+    background-color: rgba(59, 64, 69, 0.753);
+    height: 500px;
+    max-width: 1100px;
+    color: orange;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    border: 5px black;
+}
+.box-content5{
+    background-color: rgb(237, 245, 252);
+    height: 500px;
+    max-width: 1100px;
+    color: orange;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    border: 5px black;
+}
+.box-content6{
+    background-color: rgb(106, 139, 96);
+    height: 500px;
+    max-width: 1100px;
+    color: orange;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    border: 5px black;
+}
+.box-content7{
+    background-color: rgb(221, 183, 100);
+    height: 500px;
+    max-width: 1100px;
+    color: orange;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    border: 5px black;
+}
+.box-content8{
+    background-color: rgb(85, 102, 117);
+    height: 500px;
+    max-width: 1100px;
+    color: orange;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    border: 5px black;
+
+}
+
+.box1{
+    padding-left: 70px;
+    padding-top: 70px;
+    padding-right: 2px;
+    background-color: rgba(180, 15, 180, 0);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 40%;
+    gap: 30px;
+    border-radius: 10px;
+}
+.box2{
+    /* display: flex; */
+    float: right;
+    height: 500px;
+    width: 60%;
+    color: rgb(0, 0, 0);
+    padding: 40px 100px 0;
+    border-radius: 10px;
+    
+}
+
